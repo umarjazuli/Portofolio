@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Landing Page</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    /* Navbar */
+    .navbar {
+      transition: all 0.4s ease;
+    }
+    .navbar-scrolled {
+      background-color: #764ba2 !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    /* Hero */
+    #hero {
+      height: 100vh;
+      background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    #hero img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      transition: transform 0.3s ease;
+    }
+    #hero img:hover {
+      transform: scale(1.05);
+    }
+    /* Section Title */
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    /* Portfolio */
+    #portfolio {
+    background: #f9fafc url('https://www.transparenttextures.com/patterns/cubes.png');
+    }
+    .portfolio-item {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    /* Contact */
+    #contact {
+      background: #f8f9fa;
+    }
+    footer {
+      background: #764ba2;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+    footer a:hover {
+      color: #764ba2;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#hero">MyProfile</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<!-- Hero Section -->
+<section id="home" class="d-flex align-items-center text-center text-white position-relative" 
+         style="min-height:100vh; background: linear-gradient(135deg, #4b51a2, #764ba2); overflow:hidden;">
+
+  <!-- Decorative wave at bottom -->
+  <svg class="position-absolute bottom-0 start-0 w-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+    <path fill="#fff" fill-opacity="1" d="M0,192L80,165.3C160,139,320,85,480,96C640,107,800,181,960,192C1120,203,1280,149,1360,122.7L1440,96L1440,320L0,320Z"></path>
+  </svg>
+
+  <div class="container position-relative" style="z-index:2;">
+    <img src="https://images.unsplash.com/photo-1602471615287-d733c59b79c4?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto Profil" 
+        class="rounded-circle mb-4 shadow-lg" style="border:5px solid #fff; width:120px; height:120px; object-fit:cover;">
+    <h1 class="display-4 fw-bold">Halo, Saya Umar Jazuli</h1>
+    <p class="lead">IT Support | Network Entusiast | Copywriting</p>
+    <a href="#about" class="btn btn-light btn-lg mt-3 shadow">Selengkapnya</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container" data-aos="fade-right">
+    <h2 class="section-title">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center">
+        <img src="https://images.unsplash.com/photo-1691932186194-09d0d98c073c?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded shadow-lg" alt="About Me">
+      </div>
+      <div class="col-md-7">
+        <h3 class="fw-bold">Saya Umar Jazuli</h3>
+        <p>I am Umar Jazuli, a student at Universitas Muhammadiyah Prof. Dr. Hamka majoring in Informatics Engineering, I am a professional with experience in IT support, copywriting, and customer service. Skilled in managing hardware & software, creating creative content, and ensuring optimal customer experience. Adaptive, problem solver, and always eager to learn new things.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+          <img src="https://plus.unsplash.com/premium_photo-1723629691548-429b422cbdf0?q=80&w=417&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">IT Support - Hardware & Software Setup</h5>
+            <p class="card-text">Laptop & PC Services (Windows, Upgrade SSD/RAM)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+          <img src="https://plus.unsplash.com/premium_photo-1661687362109-68fb878021a9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Freelance Copywriting</h5>
+            <p class="card-text">• Bertanggung jawab mengembangkan konten kreatif untuk media sosial, artikel, dan poster sesuai dengan branding PKM Center.</p>
+            <p class="card-text">• Berkolaborasi dengan tim desain untuk menjaga konsistensi pesan dan mengembangkan strategi konten yang menarik untuk meningkatkan partisipasi mahasiswa.</p>
+            <p class="card-text">• Melakukan riset dan menerapkan teknik penulisan kreatif untuk menghasilkan konten yang relevan, persuasif, dan tepat sasaran.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+          <img src="https://images.unsplash.com/photo-1558899367-3cd83fb31ed8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Freelance Driver - Grab</h5>
+            <p class="card-text">• Mengantar penumpang dan barang dengan aman dan tepat waktu melalui layanan Grab, termasuk GrabFood dan GrabExpress.</p>
+            <p class="card-text">• Menjaga kualitas layanan dan mengembangkan keterampilan komunikasi untuk menangani keluhan pelanggan.</p>
+            <p class="card-text">• Memastikan kesiapan kendaraan dan efisiensi rute untuk mengoptimalkan waktu pengiriman dan meningkatkan kepuasan pelanggan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Carousel (Testimonial / Showcase) -->
+<div id="carouselExampleIndicators" class="carousel slide py-5" data-bs-ride="carousel">
+  <div class="carousel-inner text-center">
+    <div class="carousel-item active">
+      <h5>"Kerjaannya rapi dan profesional!"</h5>
+      <p>- Client A</p>
+    </div>
+    <div class="carousel-item">
+      <h5>"Sangat kreatif, hasilnya memuaskan."</h5>
+      <p>- Client B</p>
+    </div>
+    <div class="carousel-item">
+      <h5>"Selalu tepat waktu dan komunikatif."</h5>
+      <p>- Client C</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container" data-aos="fade-left">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nama">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Pesan"></textarea>
+          </div>
+          <button class="btn btn-primary">Kirim</button>
+        </form>
+      </div>
+      <div class="col-md-6 text-center">
+        <p>Hubungi saya melalui sosial media:</p>
+        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 MyProfile. All Rights Reserved.</p>
+  <a href="#"><i class="bi bi-facebook"></i></a>
+  <a href="#"><i class="bi bi-twitter"></i></a>
+  <a href="#"><i class="bi bi-youtube"></i></a>
+</footer>
+
+<!-- Portfolio Modal Example -->
+<div class="modal fade" id="portfolioModal1" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://via.placeholder.com/700x400" class="img-fluid mb-3">
+        <p>Detail lengkap mengenai project 1.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS & AOS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Navbar scroll effect
+  window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("navbar-scrolled", window.scrollY > 50);
+  });
+</script>
+</body>
+</html>
