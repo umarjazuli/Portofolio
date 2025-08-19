@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Biodata Saya</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body { background: #f5f8ff; color: #333; }
+
+    /* Header / Navbar */
+    header {
+      background: #0077ff;
+      padding: 15px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 30px;
+      padding: 40px;
+    }
+    .hero img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .hero h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    .hero button {
+      padding: 10px 20px;
+      background: #0077ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* About Section */
+    #about {
+      background: white;
+      padding: 40px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    #about h2 { text-align: center; margin-bottom: 10px; }
+    .biodata {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .biodata div {
+      background: #f0f4ff;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* Portfolio */
+    #portfolio {
+      background: white;
+      padding: 40px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    #portfolio h2 { text-align: center; margin-bottom: 20px; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      background: #fafafa;
+    }
+    .project img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .project p { padding: 10px; }
+
+    /* Footer */
+    footer {
+      background: #0077ff;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: Menu -->
+  <header>
+    <div class="logo">Brand</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Header</a></li>
+        <li><a href="#about">Biodata</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section 2: Hero -->
+  <section id="home" class="hero">
+    <div>
+      <h1>Selamat Datang di Website Saya</h1>
+      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+      <button>Pelajari Lebih Lanjut</button>
+    </div>
+    <img src="https://via.placeholder.com/400x300" alt="Foto Profil">
+  </section>
+
+  <!-- Section 3: About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center;">A brief introduction about myself</p>
+    <div class="biodata">
+      <div>Full Name: Dodi</div>
+      <div>Education: S1 Informatika</div>
+      <div>Pekerjaan: Web Developer</div>
+      <div>Contact: dodi@example.com</div>
+      <div>Hobi: Membaca, Coding</div>
+      <div>Alamat: Jakarta</div>
+    </div>
+  </section>
+
+  <!-- Section 4: Portfolio -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://via.placeholder.com/350x200" alt="Proyek 1">
+        <p>Proyek 1 - Deskripsi proyek 1</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/350x200" alt="Proyek 2">
+        <p>Proyek 2 - Deskripsi proyek 2</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/350x200" alt="Proyek 3">
+        <p>Proyek 3 - Deskripsi proyek 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Dodi. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
